@@ -1,0 +1,179 @@
+[
+  {
+    "id": "revolution",
+    "title": "Revolution of Internet",
+    "content": "From early broadband adoption to nationwide 5G, South Korea's internet journey is a model of innovation.",
+    "timeline": [
+      {
+        "year": "1982",
+        "title": "Birth of the Korean Internet",
+        "details": [
+          "15 May: SDN launched by Prof. Jeon Gil-Nam and team — Korea's first internet system.",
+          "TCP/IP connection established between Seoul National University and Korea Institute of Electronics Technology via 1200 bps leased line."
+        ]
+      },
+      {
+        "year": "1983–1984",
+        "title": "Global Expansion through UUCP & CSNET",
+        "details": [
+          "KAIST connected with SDN, forming Korea's first multi-computer network.",
+          "SDN connected globally via UUCP: mcvax (Netherlands), HPLabs (USA).",
+          "Joined CSNET in Dec 1984, enabling USENET and email access."
+        ]
+      },
+      {
+        "year": "1983–1985",
+        "title": "Hangeul Creation and Commercialization",
+        "details": [
+          "KAIST developed Korean-language email system.",
+          "DACOM-net launched first commercial email service.",
+          "Program 'hvi' enabled Korean email communication via SDN."
+        ]
+      },
+      {
+        "year": "1986",
+        "title": "South Korea Domain Assigned",
+        "details": [
+          "Launch of .kr domain and subdomain rules (e.g., sorak.kaist.ac.kr)."
+        ]
+      },
+      {
+        "year": "1989–1992",
+        "title": "Early Network Developments",
+        "details": [
+          "Joined ACCOM regional network.",
+          "HANAnet created via satellite link with University of Hawaii."
+        ]
+      },
+      {
+        "year": "1991",
+        "title": "SG-INET and Technical Advancements",
+        "details": [
+          "Focus on naming, routing, Hangul, and security.",
+          "Led to CERT Korea and KRNIC infrastructure."
+        ]
+      },
+      {
+        "year": "1993",
+        "title": "First Website and KRNET",
+        "details": [
+          "cair.kaist.ac.kr became Korea's first web server.",
+          "KRNET founded to exchange internet technologies."
+        ]
+      },
+      {
+        "year": "1994",
+        "title": "Commercial Internet Service Begins",
+        "details": [
+          "KORNET (June), DACOM InterNet (Oct), and nuri.net (Nov) launched."
+        ]
+      },
+      {
+        "year": "1995–1998",
+        "title": "Laying the Foundation",
+        "details": [
+          "1995: Framework Act on Informatisation Promotion passed.",
+          "1996: KII project initiated for broadband infrastructure.",
+          "1998: Broadband services launched; 80% household penetration by 2005."
+        ]
+      },
+      {
+        "year": "2000s",
+        "title": "Broadband Boom & Digital Integration",
+        "details": [
+          "South Korea led global broadband penetration.",
+          "2000: OhMyNews launched, pioneering citizen journalism.",
+          "2002: Seoul named world's most connected city."
+        ]
+      },
+      {
+        "year": "2010s",
+        "title": "Mobile Revolution & 4G Expansion",
+        "details": [
+          "2011: SK Telecom launched 4G LTE.",
+          "2013: LTE dominated mobile subscriptions.",
+          "2015–2016: LTE Advanced introduced, prepping for 5G.",
+          "2019: LTE accounted for 77% of mobile data traffic."
+        ]
+      },
+      {
+        "year": "2020s",
+        "title": "5G Leadership & Digital Transformation",
+        "details": [
+          "2019: First nationwide 5G launch.",
+          "2020: Full-country 5G coverage achieved.",
+          "2021–2022: Major investment in AR/VR, cloud gaming, automation.",
+          "2022: 45% 5G adoption, 22M users, 215K base stations.",
+          "2020–2023: 5G-powered pandemic response robots deployed.",
+          "2025: 97.4% internet penetration — 50.4M users."
+        ]
+      }
+    ]
+  },
+    {
+    "id": "innovation",
+    "title": "Innovation & Research",
+    "timeline": [
+      {
+        "year": "2005",
+        "title": "HUBO Introduced",
+        "details": [
+          "Developed by KAIST (Korea Advanced Institute of Science & Technology)",
+          "First humanoid robot with human-like proportions",
+          "Bipedal locomotion, voice recognition, modular design for research and industrial applications"
+        ]
+      },
+      {
+        "year": "2010",
+        "title": "EVER-1",
+        "details": [
+          "Assistive robot prototype for household and eldercare",
+          "Simplified humanoid motions and limited speech recognition"
+        ]
+      },
+      {
+        "year": "2014",
+        "title": "Pibot",
+        "details": [
+          "Educational and social interaction robot",
+          "Used in research, competitions, and interactive applications",
+          "Improved AI-based communication and multi-tasking"
+        ]
+      },
+      {
+        "year": "2018",
+        "title": "HUBO2+",
+        "details": [
+          "Upgraded version with better sensors, stronger actuators, and improved balance",
+          "Deployed in research labs worldwide for human-robot collaboration studies"
+        ]
+      },
+      {
+        "year": "2020",
+        "title": "PIBO (HUBO Educational Robot)",
+        "details": [
+          "Compact, user-friendly robot designed for STEM education and human-robot interaction research",
+          "Used in schools and research institutes to teach coding and AI"
+        ]
+      },
+      {
+        "year": "2022",
+        "title": "HUBO-X",
+        "details": [
+          "Next-gen platform with cloud-connected AI, capable of learning from other robots and human demonstrations",
+          "Designed for service roles in hospitals and public spaces"
+        ]
+      },
+      {
+        "year": "Other Notable KAIST Robots",
+        "title": "EVER Series, M-DRUs, RAIBO, DRC-HUBO+",
+        "details": [
+          "EVER Series – Assistive and companion robots for the elderly (voice interaction, fall detection, medication reminders, emotional recognition)",
+          "M-DRUs – Mobile Disaster Response Units built on HUBO platform, capable of entering hazardous environments (thermal imaging, gas sensors, robotic arms)",
+          "RAIBO – Quadruped robot for rugged outdoor mobility and payload delivery",
+          "DRC-HUBO+ – Enhanced autonomy and team-based coordination abilities, used in Korean government-funded disaster simulation training"
+        ]
+      }
+    ]
+  }
+]
