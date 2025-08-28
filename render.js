@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Function to render a timeline
+
+  // ===== JSON Validation & Timeline Rendering =====
   function renderTimeline(containerId, pageId, heading) {
     const timelineContainer = document.getElementById(containerId);
     if (!timelineContainer) return;
 
-    // Adjust JSON path depending on folder structure
     const jsonPath = window.location.pathname.includes('/subpages/') ? '../siteData.json' : 'siteData.json';
 
     fetch(jsonPath)
@@ -13,12 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
         return res.json();
       })
       .then(data => {
+        // JSON validation
+        if (data && Array.isArray(data)) {
+          console.log(`✅ JSON validation passed for ${pageId}`, data);
+        } else {
+          console.error(`❌ Invalid JSON structure for ${pageId}`);
+          timelineContainer.innerHTML = '<p>Invalid JSON structure.</p>';
+          return;
+        }
+
+        // Find page by ID
         const page = data.find(p => p.id === pageId);
         if (!page || !page.timeline) {
           timelineContainer.innerHTML = '<p>No timeline data found.</p>';
           return;
         }
 
+        // Render timeline HTML
         let html = `<h2>${heading}</h2>`;
         page.timeline.forEach(entry => {
           html += `
@@ -30,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
         });
-
         timelineContainer.innerHTML = html;
       })
       .catch(err => {
@@ -39,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  // Detect and render each timeline
+  // Render each timeline
   renderTimeline('revolution-timeline', 'revolution', 'Timeline of Internet Revolution');
   renderTimeline('innovation-timeline', 'innovation', 'Robotics Leadership Timeline');
 
-  // Optional: Mobile menu toggle
+  // ===== MOBILE MENU TOGGLE =====
   const menuBtn = document.querySelector('.mobile-menu-btn');
   if (menuBtn) {
     menuBtn.addEventListener('click', () => {
@@ -56,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Optional: smooth scrolling for anchor links
+  // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -68,4 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
 });
